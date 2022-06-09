@@ -4,10 +4,10 @@ window.addEventListener('keydown', function (e) {
   const player = document.querySelector('ytd-player').getPlayer();
   const seconds = 2;
   if (e.ctrlKey) {
-    if (e.keyCode === 37) {
+    if (e.keyCode === 90) {
       player.seekToStreamTime(player.getCurrentTime() - seconds)
     }
-    else if (e.keyCode === 39) {
+    else if (e.keyCode === 88) {
       player.seekToStreamTime(player.getCurrentTime() + seconds)
     }
   }
